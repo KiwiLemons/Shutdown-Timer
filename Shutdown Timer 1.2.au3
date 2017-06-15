@@ -13,7 +13,7 @@ Global $Param
 #include <GUIConstantsEx.au3>
 #include <StaticConstants.au3>
 #include <WindowsConstants.au3>
-#Region ### START Koda GUI section ### Form=c:\users\austen\downloads\inputbox.kxf
+#Region ### START GUI section
 $Form1_1 = GUICreate("Shutdown Timer by KiwiLemons", 443, 100, -1, -1)
 $TimeINput = GUICtrlCreateInput("", 24, 16, 121, 21, BitOR($GUI_SS_DEFAULT_INPUT, $ES_NUMBER))
 GUICtrlSetTip(-1, "Enter your desired time which can be read as either minutes or hours")
@@ -33,7 +33,7 @@ GUICtrlSetTip(-1, "Choose what you want to happen when the countdown is complete
 $Boot_A = GUICtrlCreateButton("Advanced Startup", 136, 56, 107, 25)
 GUICtrlSetTip(-1, "Instantly reboots your PC into Advanced Startup mode (Does not work on Windows 7)")
 GUISetState(@SW_SHOW)
-#EndRegion ### END Koda GUI section ###
+#EndRegion ### END GUI section ###
 
 While 1
 	$nMsg = GUIGetMsg()
